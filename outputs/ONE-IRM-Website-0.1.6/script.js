@@ -1,5 +1,5 @@
 const DOWNLOAD_URL =
-  'https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.6/ONE-IRM-PRESENTER-0.1.6-Windows-x64-Setup.exe';
+  'https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.6/ONE.IRM.PRESENTER_0.1.6_x64-setup.exe';
 
 const apps = [
   {
@@ -75,11 +75,12 @@ render(apps);
 search.addEventListener('input', event => {
   const query = event.target.value.trim().toLowerCase();
 
-  const results = apps.filter(app =>
-    `${app.name} ${app.description} ${app.platforms.join(' ')}`
-      .toLowerCase()
-      .includes(query)
-  );
+  const results = apps.filter(app => {
+    const searchableText =
+      `${app.name} ${app.description} ${app.platforms.join(' ')}`.toLowerCase();
+
+    return searchableText.includes(query);
+  });
 
   render(results);
 });
