@@ -3,42 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ONE IRM — one platform for every IRM application.">
+
+  <meta
+    name="description"
+    content="ONE IRM — one platform for every IRM application."
+  >
+
   <title>ONE IRM — Ministry Applications</title>
+
   <link rel="stylesheet" href="style.css?v=4">
   <link rel="stylesheet" href="platform.css?v=4">
 </head>
+
 <body>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="ONE IRM home"><img src="assets/one-irm-logo.png" alt="ONE IRM logo"><span>ONE IRM</span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="main-nav" aria-label="Primary navigation"><a href="#home">Home</a><a href="#applications">Applications</a><a href="#releases">Releases</a><a href="#about">About</a><a class="nav-download" href="#applications">Downloads</a></nav>
+    <a class="brand" href="#home" aria-label="ONE IRM home">
+      <img src="assets/one-irm-logo.png" alt="ONE IRM logo">
+      <span>ONE IRM</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#applications">Applications</a>
+      <a href="#releases">Releases</a>
+      <a href="#about">About</a>
+
+      <a
+        class="nav-download"
+        href="https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.6/ONE-IRM-PRESENTER-0.1.6-Windows-x64-Setup.exe"
+      >
+        Downloads
+      </a>
+    </nav>
   </header>
+
   <main>
     <section class="hero" id="home">
       <div class="hero-content">
         <span class="eyebrow">One ministry. One platform.</span>
-        <h1>One Platform for<br><em>Every IRM Application</em></h1>
-        <p>Access official ONE IRM web applications, Windows software, and Android apps from one centralized platform.</p>
-        <div class="hero-actions"><a class="button primary" href="#applications">Explore Applications</a><a class="button secondary" href="#applications">Downloads <span>↓</span></a></div>
-        <div class="availability"><span>Available for:</span><b>▣ Windows</b><b>◆ Android</b><b>◎ Web</b></div>
+
+        <h1>
+          One Platform for<br>
+          <em>Every IRM Application</em>
+        </h1>
+
+        <p>
+          Access official ONE IRM web applications, Windows software,
+          and Android apps from one centralized platform.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#applications">
+            Explore Applications
+          </a>
+
+          <a class="button secondary" href="#applications">
+            Downloads <span>↓</span>
+          </a>
+        </div>
+
+        <div class="availability">
+          <span>Available for:</span>
+          <b>▣ Windows</b>
+          <b>◆ Android</b>
+          <b>◎ Web</b>
+        </div>
       </div>
-      <div class="platform-preview" aria-label="ONE IRM application collection">
-        <div class="platform-preview-copy"><span>THE OFFICIAL IRM NAGA APP HUB</span><strong>Discover. Download.<br>Stay updated.</strong><small>Every official ONE IRM application will be published here.</small></div>
-        <div class="platform-orbit" aria-hidden="true"><i>▣</i><i>◆</i><i>◎</i><div><img src="assets/one-irm-logo.png" alt=""></div></div>
+
+      <div
+        class="platform-preview"
+        aria-label="ONE IRM application collection"
+      >
+        <div class="platform-preview-copy">
+          <span>THE OFFICIAL IRM NAGA APP HUB</span>
+
+          <strong>
+            Discover. Download.<br>
+            Stay updated.
+          </strong>
+
+          <small>
+            Every official ONE IRM application will be published here.
+          </small>
+        </div>
+
+        <div class="platform-orbit" aria-hidden="true">
+          <i>▣</i>
+          <i>◆</i>
+          <i>◎</i>
+
+          <div>
+            <img src="assets/one-irm-logo.png" alt="">
+          </div>
+        </div>
       </div>
     </section>
+
     <section class="applications" id="applications">
-      <div class="section-heading"><div><span class="eyebrow purple">Our applications</span><h2>Applications built for ministry.</h2><p>Everything your ministry needs, organized in one place.</p></div><label class="search-wrap" for="search"><span>⌕</span><input id="search" type="search" placeholder="Search applications" autocomplete="off"></label></div>
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow purple">Our applications</span>
+          <h2>Applications built for ministry.</h2>
+          <p>Everything your ministry needs, organized in one place.</p>
+        </div>
+
+        <label class="search-wrap" for="search">
+          <span>⌕</span>
+
+          <input
+            id="search"
+            type="search"
+            placeholder="Search applications"
+            autocomplete="off"
+          >
+        </label>
+      </div>
+
       <div class="app-grid" id="appGrid"></div>
     </section>
+
     <section class="releases" id="releases">
-      <div><span class="eyebrow">Latest releases</span><h2>Stay current. Keep serving.</h2><p>New versions, improvements, and fixes will appear here as they are published.</p></div>
-      <div class="release-list"><article><span>Latest</span><div><b>ONE IRM Presenter 0.1.6</b><small>Windows x64 Installer · Official IRM Naga release</small></div><a href="downloads/ONE-IRM-PRESENTER-0.1.6-Windows-x64-Setup.exe" download>Download</a></article></div>
+      <div>
+        <span class="eyebrow">Latest releases</span>
+        <h2>Stay current. Keep serving.</h2>
+
+        <p>
+          New versions, improvements, and fixes will appear here as
+          they are published.
+        </p>
+      </div>
+
+      <div class="release-list">
+        <article>
+          <span>Latest</span>
+
+          <div>
+            <b>ONE IRM Presenter 0.1.6</b>
+            <small>
+              Windows x64 Installer · Official IRM Naga release
+            </small>
+          </div>
+
+          <a
+            href="https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.6/ONE-IRM-PRESENTER-0.1.6-Windows-x64-Setup.exe"
+          >
+            Download
+          </a>
+        </article>
+      </div>
     </section>
-    <section class="about" id="about"><span class="eyebrow purple">About ONE IRM</span><h2>One trusted home for every IRM project.</h2><p>ONE IRM makes official applications, installers, versions, and release information easy to find—so teams can spend less time searching and more time serving.</p></section>
+
+    <section class="about" id="about">
+      <span class="eyebrow purple">About ONE IRM</span>
+
+      <h2>One trusted home for every IRM project.</h2>
+
+      <p>
+        ONE IRM makes official applications, installers, versions,
+        and release information easy to find—so teams can spend less
+        time searching and more time serving.
+      </p>
+    </section>
   </main>
-  <footer><div class="brand"><img src="assets/one-irm-logo.png" alt="ONE IRM logo"><span>ONE IRM</span></div><p>One Ministry. One Platform.</p><small>© 2026 ONE IRM</small></footer>
-  <script src="script.js?v=5"></script>
+
+  <footer>
+    <div class="brand">
+      <img src="assets/one-irm-logo.png" alt="ONE IRM logo">
+      <span>ONE IRM</span>
+    </div>
+
+    <p>One Ministry. One Platform.</p>
+    <small>© 2026 ONE IRM</small>
+  </footer>
+
+  <script src="script.js?v=6"></script>
 </body>
 </html>
