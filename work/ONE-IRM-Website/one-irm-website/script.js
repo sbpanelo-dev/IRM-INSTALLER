@@ -1,5 +1,5 @@
 const apps = [
-  { name: 'ONE IRM Presenter', version: '0.1.6', description: 'Worship presentation software for songs, Bible verses, media, and church services.', platforms: ['Windows'], icon: 'logo', primary: 'Download', download: 'downloads/ONE-IRM-PRESENTER-0.1.6-Windows-x64-Setup.exe' }
+  { name: 'ONE IRM Presenter', version: '0.1.6', description: 'Worship presentation software for songs, Bible verses, media, and church services.', platforms: ['Windows'], icon: 'logo', primary: 'Download', download: 'https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.6/ONE-IRM-PRESENTER-0.1.6-Windows-x64-Setup.exe' }
 ];
 const grid = document.querySelector('#appGrid');
 const search = document.querySelector('#search');
