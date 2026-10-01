@@ -9,7 +9,7 @@ const apps = [
     name: 'ONE IRM Presenter',
     version: '0.1.6',
     description:
-      'Worship presentation software for songs, Bible verses, media, and church services.',
+      'Worship presentation software for displaying songs, Bible verses, media, announcements, and other content during church services.',
     platforms: ['Windows'],
     icon: 'logo',
     primary: 'Download',
@@ -19,7 +19,7 @@ const apps = [
     name: 'ONE IRM Mobile',
     version: '1.0.13',
     description:
-      'The official ONE IRM Android application for accessing ministry tools and resources on mobile devices.',
+      'An online community app for IRM churches that helps members connect, communicate, receive ministry updates, and grow together in faith.',
     platforms: ['Android'],
     icon: 'logo',
     primary: 'Download APK',
