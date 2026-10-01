@@ -1,3 +1,7 @@
+/* =========================================
+   ONE IRM platform preview
+   ========================================= */
+
 .platform-preview {
   position: absolute;
   z-index: 3;
@@ -15,7 +19,9 @@
   border-bottom: 0;
   border-radius: 24px 24px 0 0;
   background: linear-gradient(135deg, #0a0e20ee, #17102cee);
-  box-shadow: 0 40px 100px #000a, 0 0 80px #9b3fbd27;
+  box-shadow:
+    0 40px 100px #000a,
+    0 0 80px #9b3fbd27;
   backdrop-filter: blur(18px);
 }
 
@@ -44,6 +50,10 @@
   font-size: 14px;
   line-height: 1.6;
 }
+
+/* =========================================
+   Platform orbit
+   ========================================= */
 
 .platform-orbit {
   position: relative;
@@ -116,51 +126,71 @@
   bottom: 0;
 }
 
-/* Two application cards beside each other */
+/* =========================================
+   Applications
+   Two cards beside each other on desktop
+   ========================================= */
 
-.app-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+.applications .app-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  max-width: none !important;
   align-items: stretch;
 }
 
-.app-card {
-  width: 100%;
-  max-width: none;
+.applications .app-card {
+  width: 100% !important;
+  max-width: none !important;
   min-width: 0;
+  min-height: 275px;
   height: 100%;
+  margin: 0 !important;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
-.app-card-top {
+.applications .app-card-top {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.app-card-top h3 {
+.applications .app-card-top h3 {
   margin: 0 0 5px;
 }
 
-.app-card > p {
+.applications .app-card > p {
   line-height: 1.6;
 }
 
-.app-card .badges {
+.applications .app-icon {
+  flex: 0 0 auto;
+}
+
+.applications .app-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.applications .app-card .badges {
   margin-top: auto;
 }
 
-.card-actions {
+.applications .card-actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-/* Release download links */
+/* =========================================
+   Release section
+   ========================================= */
 
 .release-list {
   display: grid;
@@ -177,19 +207,31 @@
   text-align: center;
 }
 
-/* Tablet */
+/* =========================================
+   Tablet
+   ========================================= */
 
 @media (max-width: 900px) {
   .platform-preview {
     width: 92vw;
   }
-
-  .app-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
-/* Mobile */
+/* =========================================
+   Mobile
+   Application cards stack vertically
+   ========================================= */
+
+@media (max-width: 700px) {
+  .applications .app-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .applications .app-card {
+    min-height: auto;
+  }
+}
 
 @media (max-width: 600px) {
   .platform-preview {
@@ -211,22 +253,17 @@
     display: none;
   }
 
-  .app-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
   .release-list a {
     grid-column: 1 / -1;
   }
 
-  .card-actions {
+  .applications .card-actions {
     align-items: stretch;
     flex-direction: column;
   }
 
-  .card-actions .button,
-  .card-actions .details {
+  .applications .card-actions .button,
+  .applications .card-actions .details {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
