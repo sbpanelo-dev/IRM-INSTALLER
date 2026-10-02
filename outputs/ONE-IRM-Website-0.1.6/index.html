@@ -2,219 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
-  <meta
-    name="description"
-    content="ONE IRM — one platform for every IRM application."
-  >
-
-  <title>ONE IRM — Ministry Applications</title>
-
-  <link rel="stylesheet" href="style.css?v=4">
-  <link rel="stylesheet" href="platform.css?v=4">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ONE IRM is the official digital application hub of IRM Naga Church.">
+  <title>ONE IRM — Digital Tools for Ministry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=15">
 </head>
-
 <body>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="ONE IRM home">
-      <img
-        src="assets/one-irm-logo.png"
-        alt="ONE IRM logo"
-      >
-      <span>ONE IRM</span>
-    </a>
-
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-label="Open navigation"
-      aria-expanded="false"
-    >
-      ☰
-    </button>
-
+    <a class="brand" href="#home" aria-label="ONE IRM home"><img src="assets/one-irm-logo.png" alt="ONE IRM logo"><span>ONE IRM</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="main-nav" aria-label="Primary navigation">
-      <a href="#home">Home</a>
-      <a href="#applications">Applications</a>
-      <a href="#releases">Releases</a>
-      <a href="#about">About</a>
+      <a href="#home">Home</a><a href="#applications">Applications</a><a href="#purpose">Purpose</a><a href="#releases">Releases</a><a href="#about">About</a>
       <a class="nav-download" href="#applications">Downloads</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero classic-hero" id="home">
       <div class="hero-content">
-        <span class="eyebrow">One ministry. One platform.</span>
-
-        <h1>
-          One Platform for<br>
-          <em>Every IRM Application</em>
-        </h1>
-
-        <p>
-          Access official ONE IRM web applications, Windows software,
-          and Android apps from one centralized platform.
-        </p>
-
+        <span class="eyebrow light">One ministry. One platform.</span>
+        <h1>One Platform for<br><em>Every IRM Application</em></h1>
+        <p>Access official ONE IRM web applications, Windows software, and Android apps from one centralized platform.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#applications">
-            Explore Applications
-          </a>
-
-          <a class="button secondary" href="#applications">
-            Downloads <span>↓</span>
-          </a>
+          <a class="button primary" href="#applications">Explore Applications</a>
+          <a class="button ghost" href="#applications">Downloads <span>↓</span></a>
         </div>
-
-        <div class="availability">
-          <span>Available for:</span>
-          <b>▣ Windows</b>
-          <b>◆ Android</b>
-          <b>◎ Web</b>
-        </div>
+        <div class="availability"><span>Available for:</span><b>▣ Windows</b><b>◆ Android</b><b>◎ Web</b></div>
       </div>
 
-      <div
-        class="platform-preview"
-        aria-label="ONE IRM application collection"
-      >
+      <div class="platform-preview" aria-label="ONE IRM application collection">
         <div class="platform-preview-copy">
-          <span>THE OFFICIAL IRM NAGA APP HUB</span>
-
-          <strong>
-            Discover. Download.<br>
-            Stay updated.
-          </strong>
-
-          <small>
-            Every official ONE IRM application will be published here.
-          </small>
+          <span>The official IRM Naga app hub</span>
+          <strong>Discover. Download.<br>Stay updated.</strong>
+          <small>Every official ONE IRM application will be published here.</small>
         </div>
-
         <div class="platform-orbit" aria-hidden="true">
-          <i>▣</i>
-          <i>◆</i>
-          <i>◎</i>
-
-          <div>
-            <img
-              src="assets/one-irm-logo.png"
-              alt=""
-            >
-          </div>
+          <i>▣</i><i>◆</i><i>◎</i>
+          <div><img src="assets/one-irm-logo.png" alt=""></div>
         </div>
       </div>
     </section>
 
-    <section class="applications" id="applications">
+    <section class="applications section" id="applications">
       <div class="section-heading">
-        <div>
-          <span class="eyebrow purple">Our applications</span>
-
-          <h2>Applications built for ministry.</h2>
-
-          <p>
-            Everything your ministry needs, organized in one place.
-          </p>
-        </div>
-
-        <label class="search-wrap" for="search">
-          <span>⌕</span>
-
-          <input
-            id="search"
-            type="search"
-            placeholder="Search applications"
-            autocomplete="off"
-          >
-        </label>
+        <div><span class="eyebrow">Applications</span><h2>Made to serve the God.</h2></div>
+        <label class="search-wrap" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search applications" autocomplete="off"></label>
       </div>
-
-      <!-- Application cards are created by script.js -->
       <div class="app-grid" id="appGrid"></div>
     </section>
 
-    <section class="releases" id="releases">
-      <div>
-        <span class="eyebrow">Latest releases</span>
-
-        <h2>Stay current. Keep serving.</h2>
-
-        <p>
-          New versions, improvements, and fixes will appear here
-          as they are published.
-        </p>
+    <section class="purpose-section section" id="purpose">
+      <div class="purpose-intro">
+        <span class="eyebrow">A digital ministry initiative by IRM Naga Church</span>
+        <h2>ONE IRM Installer</h2>
+        <p>A growing digital platform created to serve churches and ministries through practical, accessible technology.</p>
       </div>
-
-      <div class="release-list">
-        <article>
-          <span>Windows</span>
-
-          <div>
-            <b>ONE IRM Presenter 0.1.8</b>
-            <small>
-              Windows x64 Installer · Official IRM Naga release
-            </small>
-          </div>
-
-          <a
-            href="https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.10/ONE.IRM.PRESENTER_0.1.10_x64-setup.exe"
-          >
-            Download
-          </a>
+      <div class="values-grid">
+        <article class="value-card" id="our-purpose">
+          <span class="value-number">01</span><div class="value-icon" aria-hidden="true">✦</div><h3>Our Purpose</h3>
+          <p>ONE IRM Installer was created by <strong>IRM Naga Church</strong> to use technology as a tool for serving churches and ministries. It provides a centralized platform where churches can access, install, and update useful applications designed for worship, administration, ministry activities, communication, and other church needs.</p>
+          <p>The initiative also seeks to support the growth of <strong>IRM Naga Church</strong>, the ministry behind the development of ONE IRM. As the platform grows, part of its long-term purpose is to help support IRM Naga Church in its goal of acquiring land and eventually building its own permanent place of worship.</p>
         </article>
-
-        <article>
-          <span>Android</span>
-
-          <div>
-            <b>ONE IRM Mobile 1.0.13</b>
-            <small>
-              Android APK · Official IRM Naga release
-            </small>
-          </div>
-
-          <a
-            href="https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/oneirm-android-v1.0.13/oneirm.v1.0.13.apk"
-          >
-            Download APK
-          </a>
+        <article class="value-card mission-card" id="our-mission">
+          <span class="value-number">02</span><div class="value-icon" aria-hidden="true">◎</div><h3>Our Mission</h3>
+          <p>To develop simple, reliable, accessible, and useful digital solutions that can help <strong>churches and ministries</strong> improve their worship services, administration, communication, and ministry activities.</p>
+          <p>Through ONE IRM Installer, <strong>IRM Naga Church</strong> aims to share technology beyond its own congregation by creating tools that other churches can also use and benefit from, while using the initiative to support the continued growth of the ministry.</p>
+        </article>
+        <article class="value-card vision-card" id="our-vision">
+          <span class="value-number">03</span><div class="value-icon" aria-hidden="true">◇</div><h3>Our Vision</h3>
+          <p>To see ONE IRM grow into a trusted digital platform that provides practical and accessible technology for <strong>churches and ministries</strong>, regardless of denomination or organization.</p>
+          <p>We envision an initiative that began at <strong>IRM Naga Church</strong> reaching and serving other churches through technology, while also contributing to IRM Naga's long-term goal of acquiring its own land and building a permanent church—a place where people can worship God, grow in faith, fellowship, and serve the community.</p>
         </article>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <span class="eyebrow purple">About ONE IRM</span>
+    <section class="impact-section">
+      <div class="impact-copy"><span class="eyebrow light">Built for today. Hopeful for tomorrow.</span><h2>Every application supports a bigger story.</h2><p>As ONE IRM grows, it can help create opportunities to support church projects and move IRM Naga Church closer to its dream of having a permanent home.</p></div>
+      <a class="button white" href="#about">Learn about ONE IRM <span>→</span></a>
+    </section>
 
-      <h2>One trusted home for every IRM project.</h2>
+    <section class="releases section" id="releases">
+      <div class="release-heading"><span class="eyebrow">Latest releases</span><h2>Current, trusted, and ready to install.</h2><p>Download the latest official versions directly from ONE IRM’s GitHub releases.</p></div>
+      <div class="release-list">
+        <article><div class="release-platform windows">W</div><div class="release-copy"><small>Windows desktop</small><b>ONE IRM Presenter 0.1.10</b><span>64-bit Windows installer</span></div><a href="https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.10/ONE.IRM.PRESENTER_0.1.10_x64-setup.exe">Download <span>↓</span></a></article>
+        <article><div class="release-platform android">A</div><div class="release-copy"><small>Android mobile</small><b>ONE IRM Mobile 1.0.13</b><span>Official Android APK</span></div><a href="https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/oneirm-android-v1.0.13/oneirm.v1.0.13.apk">Download APK <span>↓</span></a></article>
+      </div>
+    </section>
 
-      <p>
-        ONE IRM makes official applications, installers, versions,
-        and release information easy to find—so teams can spend less
-        time searching and more time serving.
-      </p>
+    <section class="about section" id="about">
+      <div class="about-mark"><img src="assets/one-irm-logo.png" alt=""></div>
+      <div class="about-copy"><span class="eyebrow">About ONE IRM</span><h2>One trusted home for every IRM project.</h2><p>ONE IRM makes official applications, installers, versions, and release information easy to find—so ministry teams can spend less time searching and more time serving.</p><a href="#applications">View all applications <span>→</span></a></div>
     </section>
   </main>
 
   <footer>
-    <div class="brand">
-      <img
-        src="assets/one-irm-logo.png"
-        alt="ONE IRM logo"
-      >
-      <span>ONE IRM</span>
-    </div>
-
-    <p>One Ministry. One Platform.</p>
-    <small>© 2026 ONE IRM</small>
+    <div class="footer-brand"><div class="brand"><img src="assets/one-irm-logo.png" alt="ONE IRM logo"><span>ONE IRM</span></div><p>Free digital tools created to serve churches and ministries.</p></div>
+    <div class="footer-links"><a href="#applications">Applications</a><a href="#purpose">Purpose</a><a href="#releases">Releases</a><a href="#about">About</a></div>
+    <small>© 2026 ONE IRM. Built for ministry.</small>
   </footer>
-
-  <script src="script.js?v=8"></script>
+  <script src="script.js?v=12"></script>
 </body>
 </html>
