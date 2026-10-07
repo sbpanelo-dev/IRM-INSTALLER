@@ -450,6 +450,17 @@ img {
   object-fit: contain;
 }
 
+.app-icon.presenter-logo {
+  width: 104px;
+  background: transparent;
+}
+
+.app-icon.presenter-logo img {
+  width: 100px;
+  height: 58px;
+  object-fit: contain;
+}
+
 .app-card h3 {
   margin: 0 0 5px;
   font-family: Manrope, sans-serif;

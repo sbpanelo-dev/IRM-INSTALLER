@@ -1,4 +1,4 @@
-# Updating the ONE IRM Presenter download
+# Updating the ONE PRESENTER download
 
 After building a new Windows installer:
 
@@ -7,7 +7,7 @@ After building a new Windows installer:
 
    `ONE-IRM-PRESENTER-0.1.7-Windows-x64-Setup.exe`
 
-3. Open `script.js` and update the ONE IRM Presenter entry:
+3. Open `script.js` and update the ONE PRESENTER entry:
 
    - Change `version` to the new version.
    - Change `download` to the new filename inside `downloads/`.

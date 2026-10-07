@@ -6,12 +6,12 @@ const ANDROID_DOWNLOAD_URL =
 
 const apps = [
   {
-    name: 'ONE IRM Presenter',
+    name: 'ONE PRESENTER',
     version: '0.1.12',
     description:
       'Worship presentation software for displaying songs, Bible verses, media, announcements, and other content during church services.',
     platforms: ['Windows'],
-    icon: 'logo',
+    icon: 'assets/one-presenter-logo.png',
     primary: 'Download',
     download: WINDOWS_DOWNLOAD_URL
   },
@@ -33,15 +33,18 @@ const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 
 function createApplicationCard(app) {
-  const icon =
-    app.icon === 'logo'
-      ? `
-        <img
-          src="assets/one-irm-logo.png"
-          alt="${app.name} logo"
-        >
-      `
-      : app.icon;
+  const iconSource =
+    app.icon === 'logo' ? 'assets/one-irm-logo.png' : app.icon;
+
+  const iconClass =
+    app.icon === 'assets/one-presenter-logo.png' ? ' presenter-logo' : '';
+
+  const icon = `
+    <img
+      src="${iconSource}"
+      alt="${app.name} logo"
+    >
+  `;
 
   const platformBadges = app.platforms
     .map(platform => `<span>${platform}</span>`)
@@ -50,7 +53,7 @@ function createApplicationCard(app) {
   return `
     <article class="app-card">
       <div class="app-card-top">
-        <div class="app-icon">
+        <div class="app-icon${iconClass}">
           ${icon}
         </div>
 
