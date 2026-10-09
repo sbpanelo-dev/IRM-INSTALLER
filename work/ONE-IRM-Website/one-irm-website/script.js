@@ -1,5 +1,5 @@
 const WINDOWS_DOWNLOAD_URL =
-  'https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.12/ONE.IRM.PRESENTER_0.1.12_x64-setup.exe';
+  'https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/v0.1.10/ONE.IRM.PRESENTER_0.1.10_x64-setup.exe';
 
 const ANDROID_DOWNLOAD_URL =
   'https://github.com/sbpanelo-dev/IRM-INSTALLER/releases/download/oneirm-android-v1.0.13/oneirm.v1.0.13.apk';
@@ -7,7 +7,7 @@ const ANDROID_DOWNLOAD_URL =
 const apps = [
   {
     name: 'ONE IRM Presenter',
-    version: '0.1.12',
+    version: '0.1.10',
     description:
       'Worship presentation software for displaying songs, Bible verses, media, announcements, and other content during church services.',
     platforms: ['Windows'],
